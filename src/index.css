@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 72px;
+    --on-surface: #FAFAFA;
+    --surface: #120d1c;
+    --lighten-surface: color-mix(in lab, var(--surface) 100%, #FFF 15%);
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--surface);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.1;
+    background-image: radial-gradient(var(--lighten-surface), var(--surface));
+
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-height);
+    margin: 0;
+    padding: 1rem;
+}
+header ul {
+    display: flex;
+    column-gap: .5rem;
+}
+header ul li {
+    display: inline-flex;
+    padding: .5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - var(--header-height));
+}
+
+main h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
