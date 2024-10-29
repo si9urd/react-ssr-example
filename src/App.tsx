@@ -1,10 +1,15 @@
+import {useEffect} from "react";
 import {Link, Outlet} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import './i18n'
-import './index.css'
+import './index.scss'
 
-function App() {
+function App({lang}: { lang: string }) {
   const {i18n} = useTranslation()
+
+  useEffect(() => {
+    i18n.changeLanguage(lang).then()
+  }, [lang]);
 
   return (
     <div className="page">
@@ -19,13 +24,13 @@ function App() {
         </ul>
       </header>
       <main>
-        <Outlet />
+        <Outlet/>
       </main>
     </div>
   )
 
   function switchLang(lang: string) {
-    i18n.changeLanguage(lang)
+    i18n.changeLanguage(lang).then()
   }
 }
 

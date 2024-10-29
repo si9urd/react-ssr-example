@@ -1,4 +1,4 @@
-# Rsbuild Project
+# Rsbuild React SSR Example
 
 ## Setup
 

@@ -1,3 +1,4 @@
+// @ts-ignore
 import type * as express from 'express'
 import * as React from 'react'
 import ReactDOMServer from 'react-dom/server'
@@ -5,7 +6,6 @@ import { createStaticHandler, createStaticRouter, StaticRouterProvider } from 'r
 import routes from './routes'
 
 export async function render(request: express.Request, response: express.Response) {
-  // is used to perform the data fetching and submissions on the server
   const { query, dataRoutes } = createStaticHandler(routes)
   const remixRequest = createFetchRequest(request, response)
   const context = await query(remixRequest)
@@ -28,7 +28,6 @@ export async function render(request: express.Request, response: express.Respons
 
 export function createFetchRequest(req: express.Request, res: express.Response): Request {
   const origin = `${req.protocol}://${req.get('host')}`
-  // Note: This had to take originalUrl into account for presumably vite's proxying
   const url = new URL(req.originalUrl || req.url, origin)
 
   const controller = new AbortController()

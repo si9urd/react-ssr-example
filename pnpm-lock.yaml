@@ -8,18 +8,15 @@ importers:
 
   .:
     dependencies:
-      '@rsbuild/plugin-sass':
-        specifier: ^1.0.4
-        version: 1.0.4(@rsbuild/core@1.0.17)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.14
-        version: 0.4.14(eslint@9.13.0)
       express:
         specifier: ^4.21.1
         version: 4.21.1
       i18next:
         specifier: ^23.16.4
         version: 23.16.4
+      i18next-http-middleware:
+        specifier: ^3.6.0
+        version: 3.6.0
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -45,6 +42,9 @@ importers:
       '@rsbuild/plugin-react':
         specifier: ^1.0.5
         version: 1.0.5(@rsbuild/core@1.0.17)
+      '@rsbuild/plugin-sass':
+        specifier: ^1.0.4
+        version: 1.0.4(@rsbuild/core@1.0.17)
       '@types/react':
         specifier: ^18.3.11
         version: 18.3.12
@@ -60,6 +60,9 @@ importers:
       eslint-plugin-react-hooks:
         specifier: ^5.0.0
         version: 5.0.0(eslint@9.13.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.14
+        version: 0.4.14(eslint@9.13.0)
       globals:
         specifier: ^15.11.0
         version: 15.11.0
@@ -789,6 +792,9 @@ packages:
   http-errors@2.0.0:
     resolution: {integrity: sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ==}
     engines: {node: '>= 0.8'}
+
+  i18next-http-middleware@3.6.0:
+    resolution: {integrity: sha512-pLyTOC8Dzj83byN0s4hd/i/Ewg6T36YjMrc+Zfnqz2Ca0G5ab9IPvPR8xZqr6TS0s/ZtPs2MZucDkWgqoRmNXA==}
 
   i18next@23.16.4:
     resolution: {integrity: sha512-9NIYBVy9cs4wIqzurf7nLXPyf3R78xYbxExVqHLK9od3038rjpyOEzW+XB130kZ1N4PZ9inTtJ471CRJ4Ituyg==}
@@ -2456,6 +2462,8 @@ snapshots:
       setprototypeof: 1.2.0
       statuses: 2.0.1
       toidentifier: 1.0.1
+
+  i18next-http-middleware@3.6.0: {}
 
   i18next@23.16.4:
     dependencies:

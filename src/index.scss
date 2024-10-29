@@ -46,6 +46,7 @@ body {
 
     text-align: center;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -53,10 +54,12 @@ header {
     margin: 0;
     padding: 1rem;
 }
+
 header ul {
     display: flex;
     column-gap: .5rem;
 }
+
 header ul li {
     display: inline-flex;
     padding: .5rem;
