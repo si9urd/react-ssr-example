@@ -1,7 +1,6 @@
 import {useEffect} from "react";
 import {Link, Outlet} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import './i18n'
 import './index.scss'
 
 function App({lang}: { lang: string }) {
@@ -19,8 +18,8 @@ function App({lang}: { lang: string }) {
           <li><Link to="/about">About</Link></li>
         </ul>
         <ul>
-          <li onClick={() => switchLang('en')}><a>EN</a></li>
-          <li onClick={() => switchLang('ru')}><a>RU</a></li>
+          <li onClick={() => switchLang('en')}><Link to="/en">EN</Link></li>
+          <li onClick={() => switchLang('ru')}><Link to="/ru">RU</Link></li>
         </ul>
       </header>
       <main>
