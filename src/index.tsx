@@ -9,7 +9,7 @@ const router = createBrowserRouter(routes)
 
 hydrateRoot(document.getElementById('root')!,
   <React.StrictMode>
-    <I18nextProvider i18n={i18n} defaultNS=''>
+    <I18nextProvider i18n={i18n}>
       <RouterProvider router={router} />
     </I18nextProvider>
   </React.StrictMode>

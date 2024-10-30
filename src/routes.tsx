@@ -16,7 +16,7 @@ const childRoutes = [
 const routes = [
   {
     path: '/',
-    element: <App lang="en"/>,
+    element: <App lang="ru"/>,
     children: childRoutes
   },
   {

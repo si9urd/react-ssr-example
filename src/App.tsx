@@ -8,7 +8,7 @@ function App({lang}: { lang: string }) {
 
   useEffect(() => {
     i18n.changeLanguage(lang).then()
-  }, [lang]);
+  }, [i18n, lang]);
 
   return (
     <div className="page">
